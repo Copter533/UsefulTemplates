@@ -2,7 +2,7 @@ import sys
 
 download_folder = "files"
 solution_folder = "solutions"
-url = "https://inf-ege.sdamgia.ru/test?id=14688067&nt=True&pub=False"  # Задачи
+url = "https://inf-ege.sdamgia.ru/test?id=14912698&nt=True&pub=False"  # Задачи
 
 answers = "answers.html"    # Файл с таблицей правильных ответов
 timeout = 10                # Макс время на выполнение задач
