@@ -34,3 +34,4 @@ for l in range(1, 4+1):
         ]): continue
 
         print(code)
+        exit()

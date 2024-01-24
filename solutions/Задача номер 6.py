@@ -1,4 +1,5 @@
 # Источник: https://inf-ege.sdamgia.ru/test?id=14912698&nt=True&pub=False
+import time
 
 # Задача:
 # Исполнитель Черепаха действует на плоскости с декартовой системой координат. В начальный момент Черепаха находится в
@@ -12,12 +13,30 @@
 # линией заданной данным алгоритмом. Точки на линии учитывать не следует.
 
 
+# Повтори 5 [Вперёд 8 Направо 60 Вперёд 8 Направо 120]
+
+
 from config import is_debug
 from turtle import Turtle
 
-if is_debug():
-    print("???")
+if not is_debug():
+    print(48)
     exit(0)
 
+scale = 30
 t = Turtle()
+t.speed(100)
 
+for _ in range(2):
+    t.forward(8*scale)
+    t.right(60)
+    t.forward(8*scale)
+    t.right(120)
+
+t.penup()
+for x in range(0, 13):
+    for y in range(0, 13):
+        t.goto(x * scale, -y * scale)
+        t.dot(scale // 4, '#ff0000')
+
+time.sleep(1000)

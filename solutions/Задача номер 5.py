@@ -11,7 +11,7 @@
 
 
 def alg(N):
-    b = bin(N)[1:]
+    b = bin(N)[2:]
 
     ones  = len([i for i in range(1, len(b), 2) if b[i] == "1"])
     zeros = len([i for i in range(0, len(b), 2) if b[i] == "0"])
